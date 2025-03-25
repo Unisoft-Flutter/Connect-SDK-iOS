@@ -136,8 +136,9 @@
 		[self raiseError];
 		return;
 	}
-
-	_dispatchSource = dispatch_source_create(DISPATCH_SOURCE_TYPE_READ, theSocketDescriptor, 0, self.workQueue);
+    __strong __typeof__(self) strongSelf = self;
+    if (strongSelf == nil) return;
+    _dispatchSource = dispatch_source_create(DISPATCH_SOURCE_TYPE_READ, theSocketDescriptor, 0, strongSelf.workQueue);
 	_socket = theSocketDescriptor;
 	__weak __typeof__(self) weakSelf = self;
 	dispatch_source_set_event_handler(self->_dispatchSource,
@@ -153,23 +154,29 @@
 			struct sockaddr_in theIncomingAddr;
 			memset(&theIncomingAddr, 0, sizeof(theIncomingAddr));
 			size_t theDataSize = dispatch_source_get_data(strongSelf->_dispatchSource);
-			char theBuffer[theDataSize + 1];
-			int theReceiveBytesCount = 0;
+			size_t maxDataSize = 65535;
+			char theBuffer[maxDataSize];
+			int theLastReceiveBytes = 0;
+			int theReceiveBytesSum = 0;
 			socklen_t theAddressSize = sizeof(theIncomingAddr);
-			while (theReceiveBytesCount < theDataSize)
+			while (theReceiveBytesSum < theDataSize)
 			{
-				theReceiveBytesCount += recvfrom(theSocketDescriptor, theBuffer,
-					sizeof(theBuffer), 0, (struct sockaddr*)&theIncomingAddr, &theAddressSize);
+				theLastReceiveBytes = recvfrom(theSocketDescriptor, theBuffer,
+					maxDataSize, 0, (struct sockaddr*)&theIncomingAddr, &theAddressSize);
+				theReceiveBytesSum += theLastReceiveBytes;
 			}
-			char theCAddrBuffer[SOCK_MAXADDRLEN];
-			memset(theCAddrBuffer, 0, SOCK_MAXADDRLEN);
-			inet_ntop(theIncomingAddr.sin_family, &theIncomingAddr.sin_addr, theCAddrBuffer, SOCK_MAXADDRLEN);
+			if (theLastReceiveBytes > 0)
+			{
+				char theCAddrBuffer[SOCK_MAXADDRLEN];
+				memset(theCAddrBuffer, 0, SOCK_MAXADDRLEN);
+				inet_ntop(theIncomingAddr.sin_family, &theIncomingAddr.sin_addr, theCAddrBuffer, SOCK_MAXADDRLEN);
 
-			NSString *thePath = [[NSString alloc] initWithBytes:theCAddrBuffer
-				length:strlen(theCAddrBuffer) encoding:NSUTF8StringEncoding];
-			NSData * theReceivedData = [NSData dataWithBytes:theBuffer length:theDataSize];
+				NSString *thePath = [[NSString alloc] initWithBytes:theCAddrBuffer
+					length:strlen(theCAddrBuffer) encoding:NSUTF8StringEncoding];
+				NSData * theReceivedData = [NSData dataWithBytes:theBuffer length:theLastReceiveBytes];
 
-			[strongSelf didReceiveData:theReceivedData fromAddress:thePath];
+				[strongSelf didReceiveData:theReceivedData fromAddress:thePath];
+			}
 		});
 
 	dispatch_source_set_cancel_handler(self->_dispatchSource,
