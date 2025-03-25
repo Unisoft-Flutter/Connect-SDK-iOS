@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -189,6 +189,28 @@
 		BB9F776F4924E08D116738B1 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F7AF5170CE02632778263 /* ImageInfo.m */; };
 		BB9F7AD33329FD4AC66C2D12 /* ImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9F71B68553DCA74ED1C43E /* ImageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB9F7B7905ABBE72E0843AA0 /* MediaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F7A0E6A6150ACCA2F89B6 /* MediaInfo.m */; };
+		E1D93F622D92EB970038A1FB /* LGCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D93F612D92EB970038A1FB /* LGCast.xcframework */; };
+		E1D93F632D92EB970038A1FB /* GStreamerForLGCast.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D93F602D92EB970038A1FB /* GStreamerForLGCast.xcframework */; };
+		E1D93F7C2D92EC3B0038A1FB /* ScreenMirroringService.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F752D92EC3B0038A1FB /* ScreenMirroringService.m */; };
+		E1D93F7D2D92EC3B0038A1FB /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F782D92EC3B0038A1FB /* ConnectionManager.m */; };
+		E1D93F7E2D92EC3B0038A1FB /* CameraSourceCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F6C2D92EC3B0038A1FB /* CameraSourceCapability.m */; };
+		E1D93F7F2D92EC3B0038A1FB /* CameraParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F682D92EC3B0038A1FB /* CameraParameter.m */; };
+		E1D93F802D92EC3B0038A1FB /* RemoteCameraService.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F6E2D92EC3B0038A1FB /* RemoteCameraService.m */; };
+		E1D93F812D92EC3B0038A1FB /* MirroringSourceCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F732D92EC3B0038A1FB /* MirroringSourceCapability.m */; };
+		E1D93F822D92EC3B0038A1FB /* CameraSinkCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F6A2D92EC3B0038A1FB /* CameraSinkCapability.m */; };
+		E1D93F832D92EC3B0038A1FB /* MobileCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F652D92EC3B0038A1FB /* MobileCapability.m */; };
+		E1D93F842D92EC3B0038A1FB /* WebOSTVService+LGCast.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F7A2D92EC3B0038A1FB /* WebOSTVService+LGCast.m */; };
+		E1D93F852D92EC3B0038A1FB /* MirroringSinkCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = E1D93F712D92EC3B0038A1FB /* MirroringSinkCapability.m */; };
+		E1D93F862D92EC3B0038A1FB /* ScreenMirroringService.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F742D92EC3B0038A1FB /* ScreenMirroringService.h */; };
+		E1D93F872D92EC3B0038A1FB /* CameraParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F672D92EC3B0038A1FB /* CameraParameter.h */; };
+		E1D93F882D92EC3B0038A1FB /* ConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F772D92EC3B0038A1FB /* ConnectionManager.h */; };
+		E1D93F892D92EC3B0038A1FB /* WebOSTVService+LGCast.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F792D92EC3B0038A1FB /* WebOSTVService+LGCast.h */; };
+		E1D93F8A2D92EC3B0038A1FB /* MobileCapability.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F642D92EC3B0038A1FB /* MobileCapability.h */; };
+		E1D93F8B2D92EC3B0038A1FB /* CameraSinkCapability.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F692D92EC3B0038A1FB /* CameraSinkCapability.h */; };
+		E1D93F8C2D92EC3B0038A1FB /* MirroringSinkCapability.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F702D92EC3B0038A1FB /* MirroringSinkCapability.h */; };
+		E1D93F8D2D92EC3B0038A1FB /* MirroringSourceCapability.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F722D92EC3B0038A1FB /* MirroringSourceCapability.h */; };
+		E1D93F8E2D92EC3B0038A1FB /* CameraSourceCapability.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F6B2D92EC3B0038A1FB /* CameraSourceCapability.h */; };
+		E1D93F8F2D92EC3B0038A1FB /* RemoteCameraService.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D93F6D2D92EC3B0038A1FB /* RemoteCameraService.h */; };
 		EA5F82F0199BDA2100B7302B /* ConnectSDKDefaultPlatforms.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5F82EF199BD95800B7302B /* ConnectSDKDefaultPlatforms.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA5F82F4199BDCD300B7302B /* ConnectSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5F82F3199BDCD300B7302B /* ConnectSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA5FB86E199AEC550057B4B4 /* ConnectableDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5FB7A0199AEC550057B4B4 /* ConnectableDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -571,6 +593,28 @@
 		BB9F735CB760F4387DDA84B4 /* MediaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaInfo.h; sourceTree = "<group>"; };
 		BB9F7A0E6A6150ACCA2F89B6 /* MediaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInfo.m; sourceTree = "<group>"; };
 		BB9F7AF5170CE02632778263 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
+		E1D93F602D92EB970038A1FB /* GStreamerForLGCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GStreamerForLGCast.xcframework; sourceTree = "<group>"; };
+		E1D93F612D92EB970038A1FB /* LGCast.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LGCast.xcframework; sourceTree = "<group>"; };
+		E1D93F642D92EC3B0038A1FB /* MobileCapability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileCapability.h; sourceTree = "<group>"; };
+		E1D93F652D92EC3B0038A1FB /* MobileCapability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileCapability.m; sourceTree = "<group>"; };
+		E1D93F672D92EC3B0038A1FB /* CameraParameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraParameter.h; sourceTree = "<group>"; };
+		E1D93F682D92EC3B0038A1FB /* CameraParameter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraParameter.m; sourceTree = "<group>"; };
+		E1D93F692D92EC3B0038A1FB /* CameraSinkCapability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraSinkCapability.h; sourceTree = "<group>"; };
+		E1D93F6A2D92EC3B0038A1FB /* CameraSinkCapability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraSinkCapability.m; sourceTree = "<group>"; };
+		E1D93F6B2D92EC3B0038A1FB /* CameraSourceCapability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraSourceCapability.h; sourceTree = "<group>"; };
+		E1D93F6C2D92EC3B0038A1FB /* CameraSourceCapability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraSourceCapability.m; sourceTree = "<group>"; };
+		E1D93F6D2D92EC3B0038A1FB /* RemoteCameraService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteCameraService.h; sourceTree = "<group>"; };
+		E1D93F6E2D92EC3B0038A1FB /* RemoteCameraService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteCameraService.m; sourceTree = "<group>"; };
+		E1D93F702D92EC3B0038A1FB /* MirroringSinkCapability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirroringSinkCapability.h; sourceTree = "<group>"; };
+		E1D93F712D92EC3B0038A1FB /* MirroringSinkCapability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirroringSinkCapability.m; sourceTree = "<group>"; };
+		E1D93F722D92EC3B0038A1FB /* MirroringSourceCapability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MirroringSourceCapability.h; sourceTree = "<group>"; };
+		E1D93F732D92EC3B0038A1FB /* MirroringSourceCapability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MirroringSourceCapability.m; sourceTree = "<group>"; };
+		E1D93F742D92EC3B0038A1FB /* ScreenMirroringService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenMirroringService.h; sourceTree = "<group>"; };
+		E1D93F752D92EC3B0038A1FB /* ScreenMirroringService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenMirroringService.m; sourceTree = "<group>"; };
+		E1D93F772D92EC3B0038A1FB /* ConnectionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		E1D93F782D92EC3B0038A1FB /* ConnectionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		E1D93F792D92EC3B0038A1FB /* WebOSTVService+LGCast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebOSTVService+LGCast.h"; sourceTree = "<group>"; };
+		E1D93F7A2D92EC3B0038A1FB /* WebOSTVService+LGCast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WebOSTVService+LGCast.m"; sourceTree = "<group>"; };
 		EA41388A18FE51A9002CB005 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		EA5F82EF199BD95800B7302B /* ConnectSDKDefaultPlatforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConnectSDKDefaultPlatforms.h; sourceTree = "<group>"; };
 		EA5F82F3199BDCD300B7302B /* ConnectSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectSDK.h; sourceTree = "<group>"; };
@@ -817,6 +861,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD7F8601906E99C00B33AAB /* UIKit.framework in Frameworks */,
+				E1D93F622D92EB970038A1FB /* LGCast.xcframework in Frameworks */,
+				E1D93F632D92EB970038A1FB /* GStreamerForLGCast.xcframework in Frameworks */,
 				EAD7F85E1906E98200B33AAB /* AVFoundation.framework in Frameworks */,
 				EA61EBF218FE48EF00D75696 /* MobileCoreServices.framework in Frameworks */,
 				EA61EBF018FE48E900D75696 /* SystemConfiguration.framework in Frameworks */,
@@ -1197,6 +1243,66 @@
 			path = Providers;
 			sourceTree = "<group>";
 		};
+		E1D93F5F2D92EB430038A1FB /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				44E98F5E1B1E63570043BC70 /* OHHTTPStubs.framework */,
+				44E98F5D1B1E63570043BC70 /* OCMock.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		E1D93F662D92EC3B0038A1FB /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				E1D93F642D92EC3B0038A1FB /* MobileCapability.h */,
+				E1D93F652D92EC3B0038A1FB /* MobileCapability.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		E1D93F6F2D92EC3B0038A1FB /* RemoteCameraService */ = {
+			isa = PBXGroup;
+			children = (
+				E1D93F672D92EC3B0038A1FB /* CameraParameter.h */,
+				E1D93F682D92EC3B0038A1FB /* CameraParameter.m */,
+				E1D93F692D92EC3B0038A1FB /* CameraSinkCapability.h */,
+				E1D93F6A2D92EC3B0038A1FB /* CameraSinkCapability.m */,
+				E1D93F6B2D92EC3B0038A1FB /* CameraSourceCapability.h */,
+				E1D93F6C2D92EC3B0038A1FB /* CameraSourceCapability.m */,
+				E1D93F6D2D92EC3B0038A1FB /* RemoteCameraService.h */,
+				E1D93F6E2D92EC3B0038A1FB /* RemoteCameraService.m */,
+			);
+			path = RemoteCameraService;
+			sourceTree = "<group>";
+		};
+		E1D93F762D92EC3B0038A1FB /* ScreenMirroringService */ = {
+			isa = PBXGroup;
+			children = (
+				E1D93F702D92EC3B0038A1FB /* MirroringSinkCapability.h */,
+				E1D93F712D92EC3B0038A1FB /* MirroringSinkCapability.m */,
+				E1D93F722D92EC3B0038A1FB /* MirroringSourceCapability.h */,
+				E1D93F732D92EC3B0038A1FB /* MirroringSourceCapability.m */,
+				E1D93F742D92EC3B0038A1FB /* ScreenMirroringService.h */,
+				E1D93F752D92EC3B0038A1FB /* ScreenMirroringService.m */,
+			);
+			path = ScreenMirroringService;
+			sourceTree = "<group>";
+		};
+		E1D93F7B2D92EC3B0038A1FB /* LGCast */ = {
+			isa = PBXGroup;
+			children = (
+				E1D93F662D92EC3B0038A1FB /* Device */,
+				E1D93F6F2D92EC3B0038A1FB /* RemoteCameraService */,
+				E1D93F762D92EC3B0038A1FB /* ScreenMirroringService */,
+				E1D93F772D92EC3B0038A1FB /* ConnectionManager.h */,
+				E1D93F782D92EC3B0038A1FB /* ConnectionManager.m */,
+				E1D93F792D92EC3B0038A1FB /* WebOSTVService+LGCast.h */,
+				E1D93F7A2D92EC3B0038A1FB /* WebOSTVService+LGCast.m */,
+			);
+			path = LGCast;
+			sourceTree = "<group>";
+		};
 		EA5FB799199AEC2E0057B4B4 /* Connect SDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -1556,6 +1662,7 @@
 		EA5FB840199AEC550057B4B4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E1D93F7B2D92EC3B0038A1FB /* LGCast */,
 				EA5FB841199AEC550057B4B4 /* AirPlayServiceHTTP.h */,
 				44758BBC1AE6C6E300EC43A6 /* AirPlayServiceHTTP_Private.h */,
 				EA5FB842199AEC550057B4B4 /* AirPlayServiceHTTP.m */,
@@ -1629,6 +1736,7 @@
 				EA5FB799199AEC2E0057B4B4 /* Connect SDK */,
 				EA61EB1218FE485B00D75696 /* Frameworks */,
 				EA61EB1118FE485B00D75696 /* Products */,
+				E1D93F5F2D92EB430038A1FB /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1646,6 +1754,8 @@
 		EA61EB1218FE485B00D75696 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1D93F602D92EB970038A1FB /* GStreamerForLGCast.xcframework */,
+				E1D93F612D92EB970038A1FB /* LGCast.xcframework */,
 				44EF619A1A12E23200CF344C /* libicucore.dylib */,
 				44EF61971A12E1C800CF344C /* MediaAccessibility.framework */,
 				44EF618E1A12E0A400CF344C /* libz.dylib */,
@@ -1785,6 +1895,16 @@
 				EA5F82F4199BDCD300B7302B /* ConnectSDK.h in Headers */,
 				EA5F82F0199BDA2100B7302B /* ConnectSDKDefaultPlatforms.h in Headers */,
 				BB9F726F85973936620CDADD /* MediaInfo.h in Headers */,
+				E1D93F862D92EC3B0038A1FB /* ScreenMirroringService.h in Headers */,
+				E1D93F872D92EC3B0038A1FB /* CameraParameter.h in Headers */,
+				E1D93F882D92EC3B0038A1FB /* ConnectionManager.h in Headers */,
+				E1D93F892D92EC3B0038A1FB /* WebOSTVService+LGCast.h in Headers */,
+				E1D93F8A2D92EC3B0038A1FB /* MobileCapability.h in Headers */,
+				E1D93F8B2D92EC3B0038A1FB /* CameraSinkCapability.h in Headers */,
+				E1D93F8C2D92EC3B0038A1FB /* MirroringSinkCapability.h in Headers */,
+				E1D93F8D2D92EC3B0038A1FB /* MirroringSourceCapability.h in Headers */,
+				E1D93F8E2D92EC3B0038A1FB /* CameraSourceCapability.h in Headers */,
+				E1D93F8F2D92EC3B0038A1FB /* RemoteCameraService.h in Headers */,
 				448B28761B041A5600DFF18F /* FireTVMediaControl.h in Headers */,
 				BB9F7AD33329FD4AC66C2D12 /* ImageInfo.h in Headers */,
 				BB9F712900733DE480F64D8E /* DLNAHTTPServer.h in Headers */,
@@ -1893,6 +2013,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EA61EB0718FE485B00D75696;
@@ -2089,6 +2210,16 @@
 				44A090041B6BDDBC0077E87D /* NSObject+FeatureNotSupported_Private.m in Sources */,
 				EA5FB878199AEC550057B4B4 /* CapabilityFilter.m in Sources */,
 				44D0ECF01B55DA9000E02A8B /* SubtitleInfo.m in Sources */,
+				E1D93F7C2D92EC3B0038A1FB /* ScreenMirroringService.m in Sources */,
+				E1D93F7D2D92EC3B0038A1FB /* ConnectionManager.m in Sources */,
+				E1D93F7E2D92EC3B0038A1FB /* CameraSourceCapability.m in Sources */,
+				E1D93F7F2D92EC3B0038A1FB /* CameraParameter.m in Sources */,
+				E1D93F802D92EC3B0038A1FB /* RemoteCameraService.m in Sources */,
+				E1D93F812D92EC3B0038A1FB /* MirroringSourceCapability.m in Sources */,
+				E1D93F822D92EC3B0038A1FB /* CameraSinkCapability.m in Sources */,
+				E1D93F832D92EC3B0038A1FB /* MobileCapability.m in Sources */,
+				E1D93F842D92EC3B0038A1FB /* WebOSTVService+LGCast.m in Sources */,
+				E1D93F852D92EC3B0038A1FB /* MirroringSinkCapability.m in Sources */,
 				EA5FB8F3199AEC570057B4B4 /* DLNAService.m in Sources */,
 				EA5FB8B8199AEC560057B4B4 /* LGSRWebSocket.m in Sources */,
 				44AD91781AFA7F1000C23A71 /* FireTVService.m in Sources */,
@@ -2221,7 +2352,11 @@
 				);
 				INFOPLIST_FILE = core/ConnectSDKAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2253,7 +2388,11 @@
 				GCC_PREFIX_HEADER = "core/ConnectSDKIntegrationTests/ConnectSDKIntegrationTests-Prefix.pch";
 				INFOPLIST_FILE = core/ConnectSDKAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2286,7 +2425,11 @@
 				);
 				INFOPLIST_FILE = core/ConnectSDKTests/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2315,7 +2458,11 @@
 				GCC_PREFIX_HEADER = "core/ConnectSDKTests/ConnectSDKTests-Prefix.pch";
 				INFOPLIST_FILE = core/ConnectSDKTests/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2350,7 +2497,11 @@
 				);
 				INFOPLIST_FILE = core/ConnectSDKIntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -2382,7 +2533,11 @@
 				GCC_PREFIX_HEADER = "core/ConnectSDKIntegrationTests/ConnectSDKIntegrationTests-Prefix.pch";
 				INFOPLIST_FILE = core/ConnectSDKIntegrationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
