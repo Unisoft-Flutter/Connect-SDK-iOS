@@ -148,16 +148,21 @@ limitations under the License.
 
 ******************************************
 - update core:
-cd core
-git pull origin main
-cd ..
-git add core
-git commit -m 'update core'
-git push origin main
-
+```
++ cd core
++ git pull origin main
++ cd ..
++ git add core
++ git commit -m 'update core'
++ git push origin main
+```
 ******************************************
 - clone all source:
-git clone --recurse-submodules <repo>
+```
++ git clone --recurse-submodules <repo>
+```
 
 - clone submodules:
-git submodule update --init --recursive
+```
++ git submodule update --init --recursive
+```
