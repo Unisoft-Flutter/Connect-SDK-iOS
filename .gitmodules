@@ -1,3 +1,6 @@
 [submodule "core"]
 	path = core
 	url = https://github.com/Unisoft-Flutter/Connect-SDK-iOS-Core
+[submodule "modules/firetv"]
+	path = modules/firetv
+	url = https://github.com/ConnectSDK/Connect-SDK-iOS-FireTV.git
